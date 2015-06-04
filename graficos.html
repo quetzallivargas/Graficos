@@ -12,25 +12,28 @@
 			$(function () { 
 			    $('#container').highcharts({
 			        chart: {
-			            type: 'bar'
+			            type: 'pie'
 			        },
 			        title: {
-			            text: 'Fruit Consumption'
+			            text: 'Pensiones por delegación: ' + 'norte'
 			        },
 			        xAxis: {
-			            categories: ['Apples', 'Bananas', 'Oranges']
+			            categories: ['Viudez', 'Orfandad', 'Vejez']
 			        },
 			        yAxis: {
 			            title: {
-			                text: 'Fruit eaten'
+			                text: 'Número de pensiones dadas de alta'
 			            }
 			        },
 			        series: [{
-			            name: 'Jane',
+			            name: 'Viudez',
 			            data: [1, 0, 4]
 			        }, {
-			            name: 'John',
+			            name: 'Orfandad',
 			            data: [5, 7, 3]
+			        }, {
+			        	name: 'Vejez',
+			        	data: [6, 3, 9]
 			        }]
 			    });
 			});
